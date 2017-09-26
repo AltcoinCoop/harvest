@@ -26,7 +26,20 @@ CRYPTONOTE STANDARD 008                                       March 2013
 ## Why Build Harvest
 
 ```
-git clone git@github.com:KamesCG/Harvest.git
+git clone git@github.com:KamesCG/harvest.git
+
+cd harvest
+
+yarn
+
+yarn install -g webassembly // tooling
+
+yarn start // development
+yarn build // production
+
+yarn build:wasm // compile C++ into WebAssembly
+yarn build:asm // compile C++ into asm.js
+
 ```
 
 Monero is perfect for mass-adoption. The underlying CryptoNote algorithm is specifically designed for CPUs (compared to GPU or ASIC). Therefore, it's suitable for devices that a vast majority of people already own. In my opinion, it provides a very interesting, and large, niche for the Monero Blockchain.
