@@ -93,6 +93,8 @@ module.exports = {
     // for React Native Web.
     extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
+       /*--- Core ---*/
+      foundryCode: path.resolve(__dirname, '../src/foundry'),
       content: path.resolve(__dirname, '../src/static'),
       interface: path.resolve(__dirname, '../src/interface'),
       wasm: path.resolve(__dirname, '../src/wasm'),
