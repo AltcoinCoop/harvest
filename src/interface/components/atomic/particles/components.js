@@ -55,6 +55,8 @@ const components = [
     },
     style: props => ({
      display: 'flex',
+     position: 'relative',
+     zIndex: 10,
     })
   },
   // Box
@@ -66,7 +68,9 @@ const components = [
 
     },
     style: props => ({
-      boxSizing: 'border-box'
+      boxSizing: 'border-box',
+      position: 'relative',
+      zIndex: 10,
     })
   },
 

@@ -15,7 +15,7 @@ export const initialState = {
   /*--- Header ---*/
   header: {
     layout: {
-      gradient: 'green',
+      gradient: 'blueAlge',
       ml: [0],
       mt: [0],
       p: [5]

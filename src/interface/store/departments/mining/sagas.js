@@ -177,7 +177,7 @@ function* miningStart({}) {
       type: NOTIFICATION_OPEN, 
       payload:{
         title: `Mining Succesfully Started`, 
-        message: 'Mining for Cryptocurrency has begun. Thank you for contributing to the Internet Engineers Guild.'
+        message: 'You have begun mining for Cryptocurrency directly from the Browser.'
       },
       metadata: {
         category: 'success'
@@ -197,7 +197,7 @@ function* miningStop({}) {
       type: NOTIFICATION_OPEN, 
       payload:{
         title: `Mining Cryptocurrency Stopped`, 
-        message: 'You have stopped mining for cryptocurrency.'
+        message: 'You stopped mining for cryptocurrency.'
       },
       metadata: {
         category: 'success'
@@ -230,7 +230,7 @@ function* miningInitialize(props) {
       type: NOTIFICATION_OPEN, 
       payload:{
         title: `Mining Initialized`, 
-        message: 'Cryptocurrency Mining Software has been initialized.'
+        message: 'Cryptocurrency Mining has been initialized. If you are logged in total hashing overtime will also be calculated.'
       },
       metadata: {
         category: 'success'

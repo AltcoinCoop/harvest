@@ -2,6 +2,7 @@
 import React from 'react'
 import { Flex, Box} from 'particles'
 /* ------------------------- Internal Dependencies -------------------------- */
+import { MiningInterface, MiningClock} from 'containers'
 import assets from 'assets'
 import { 
  BackgroundImage, BackgroundGradient,
@@ -21,7 +22,12 @@ export default props => (
           <HorizontalRule bi='colorBaseReverse' bs={1} mt={[10, 20]} gradientDir='-170deg' w={[0.33333]} />
           <Heading level={[3]} f={[3]} ts={['darkPurple']}>Open Source Javascript/WebAssembly Monero Mining</Heading>
         </Box>
+        <Container w={[780]} >
+          <MiningInterface />
+          <MiningClock />
+        </Container>
       </Flex>
     </Container>
+
   </Section>
 )

@@ -4,6 +4,8 @@ import MediaQuery from 'react-responsive'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 import { Flex, Box, Grid} from 'particles'
 /* ------------------------- Internal Dependencies -------------------------- */
+
+
 import assets from 'assets'
 import { 
  BackgroundImage, BackgroundGradient,
@@ -51,7 +53,7 @@ fetchAndInstantiate(factorial, importObject).then(function(instance) {
 /* ------------------------------- Component -------------------------------- */
 export default props => (
   <div>
-  
+
   </div>
 )
 

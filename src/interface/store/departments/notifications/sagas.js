@@ -17,7 +17,7 @@ function* notificationOpen({payload, metadata}) {
   toast(<NotificationToast title={payload.title} message={payload.message}/>, {
     className: 'dark-toast',
     progressClassName: 'transparent-progress',
-  } )
+  })
   switch (payload.category) {
     case 'info':
       break;

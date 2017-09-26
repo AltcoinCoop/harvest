@@ -37,7 +37,9 @@ const MiningInterface = ({
           <Paragraph f={[2]}>{hashAverage}</Paragraph>
         </Box>
       </Flex>
+      <Button f={[1]} mt={[10,20]} gradient='green' ts='dark' onClick={()=> {miningHashTotalRequest(); miningHashAverageRequest(); miningHashAcceptedRequest(); }}>Update Mining Statistics</Button>
       <Paragraph f={[0]} mt={10} textAlign='center'>Automatically updates every 15 seconds with latest <strong>cryptocurrency mining statistics</strong>.</Paragraph>
+      <Paragraph f={[0]} mt={10} textAlign='center'>Currently Running Coin-Hive Software</Paragraph>
     </Flex>
   )
 }
