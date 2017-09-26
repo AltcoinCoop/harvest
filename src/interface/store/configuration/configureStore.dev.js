@@ -21,10 +21,10 @@ const configureStore = (initialState, services = {}) => {
   middleware.push(sagaMiddleware)
 
   // Logging Middleware
-  const logger = createLogger({
-    level: 'info',
-    collapsed: true
-  });
+  // const logger = createLogger({
+  //   level: 'info',
+  //   collapsed: true
+  // });
   // middleware.push(logger);
 
   // Router Middleware

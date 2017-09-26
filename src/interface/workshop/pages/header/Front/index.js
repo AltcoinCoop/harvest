@@ -12,7 +12,7 @@ import {
 /* ------------------------------- Component -------------------------------- */
 export default props => (
   <Section {...props} color='white' pos='relative' >
-    <BackgroundGradient gradient={['ibize']} z={5} o={1} o={0.4} bs={['insetBottomLight']}/>
+    <BackgroundGradient gradient={['ibize']} z={5} o={1} o={1} bs={['insetBottomLight']}/>
     <BackgroundImage src={assets.images.marin} />
     <Container>
       <Flex align='center' direction={['column']} justify={['center']} mh={['100vh']} w={[1]} >

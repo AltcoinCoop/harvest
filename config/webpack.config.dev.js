@@ -91,6 +91,7 @@ module.exports = {
     extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
       /*--- Core ---*/
+      foundryCode: path.resolve(__dirname, '../src/foundry'),
       content: path.resolve(__dirname, '../src/static'),
       interface: path.resolve(__dirname, '../src/interface'),
       wasm: path.resolve(__dirname, '../src/wasm'),
@@ -268,10 +269,7 @@ module.exports = {
         test: /\.svg$/,
         loader: 'raw-loader',
       },
-      {
-        test: /\.wasm$/,
-        loaders: ['wasm-loader']
-      },
+
       {
         test: /\.graphql|gql$/,
         exclude: /node_modules/,

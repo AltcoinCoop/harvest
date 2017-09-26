@@ -8,7 +8,7 @@ const fs = require('fs')
 /* ---------------------------- Initialization ------------------------------ */
 function main() { 
   const inputDir = path.resolve('foundry/smelt')
-  const outputDir = path.resolve('foundry/compiled')
+  const outputDir = path.resolve('src/foundry')
   if(!fs.existsSync(outputDir)) fs.mkdirSync(outputDir)
 
   // Scan the Foundry Minerals

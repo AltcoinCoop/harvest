@@ -10,25 +10,48 @@ import {
  Button, Container, Heading, Image, Link, Paragraph, Section, Span, SVG,
  Blockquote, HorizontalRule, Shape, Responsive } from 'atomic'
 
+// Developer Docs: https://github.com/ballercat/wasm-loader
+/**
+ * The WASM Loader was disabled, because it was causing issues.
+ * For now we're doing a simple fetch to the static asset, instead
+ * of loading the ArrayBuffer in Javascript.
+ */
+
+import harvest from 'foundryCode/harvest/harvestSlim.wasm'
+import factorial from 'foundryCode/harvest/factorial.wasm'
+
+let importObject = {}
+
+function fetchAndInstantiate(url, importObject) {
+  return fetch(url).then(response =>
+    response.arrayBuffer()
+  ).then(bytes =>
+    window.WebAssembly.instantiate(bytes, importObject)
+  ).then(results =>
+    results.instance
+  );
+}
+
+
+fetchAndInstantiate(harvest, importObject).then(function(instance) {
+  // Store the WebAssembly functions in "t"
+  const t = instance.exports
+  console.log(t)
+})
+
+fetchAndInstantiate(factorial, importObject).then(function(instance) {
+  // Store the WebAssembly functions in "t"
+  const t = instance.exports
+  const factorial = instance.exports._Z4facti;
+
+  console.log(factorial(1)); // 1
+  console.log(factorial(2)); // 2
+  console.log(factorial(3)); // 6
+})
 /* ------------------------------- Component -------------------------------- */
 export default props => (
   <div>
-    <Container w={[720]} >
-      <Heading level={[1]}>Heading 1</Heading>
-      <Heading level={[2]}>Heading 2</Heading>
-      <Heading level={[3]}>Heading 3</Heading>
-      <Heading level={[4]}>Heading 4</Heading>
-      <Heading level={[5]}>Heading 5</Heading>
-      <Heading level={[6]}>Heading 6</Heading>
-    <Blockquote>
-      Donec viverra erat sed lacus blandit faucibus. Nulla ipsum libero, dictum a cursus non, sollicitudin ac metus. Cras id mi vitae ante maximus dapibus eget quis urna. Proin nec tortor sed arcu posuere consectetur vel vitae lectus. Pellentesque fringilla fringilla sapien ac molestie. Praesent et diam viverra, bibendum lacus sit amet, tempor nunc. 
-      <cite>KamesCG</cite>
-    </Blockquote>
-
-    <Button>Join Now</Button><br/><br/>
-    <Button gradient='cherry' >Register Account</Button><br/><br/>
-    <Button gradient='greenLush' f={[3]} bs={[2]} >Control Univsere</Button><br/><br/>
-    </Container>    
+  
   </div>
 )
 

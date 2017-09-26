@@ -12,11 +12,6 @@ import { FooterContext }  from 'workshop/sections'
 
 const SiteEntry = props=>(
 <div >
-  <Fixed top left right w={[1]} z={500}>
-    <BlockTop/>
-    <BlockBranding/>
-  </Fixed>
-
   {/* Header Zone */}
   {!props.zones.header ? null: (
     <SiteHeader {...props.header.layout} >
