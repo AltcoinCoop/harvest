@@ -20,7 +20,6 @@ import {
 import harvest from 'foundryCode/harvest/harvestSlim.wasm'
 import factorial from 'foundryCode/harvest/factorial.wasm'
 
-let importObject = {}
 
 function fetchAndInstantiate(url, importObject) {
   return fetch(url).then(response =>
@@ -33,6 +32,7 @@ function fetchAndInstantiate(url, importObject) {
 }
 
 
+let importObject = {}
 fetchAndInstantiate(harvest, importObject).then(function(instance) {
   // Store the WebAssembly functions in "t"
   const t = instance.exports
