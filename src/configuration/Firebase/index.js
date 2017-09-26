@@ -1,10 +1,11 @@
 module.exports = {
     FIREBASE_CONFIG: {
-        apiKey: "AIzaSyBoadDQC4z7zHDTszE1o4X50JXRxoqZwKg",
-        authDomain: "kames-internet-engineer.firebaseapp.com",
-        databaseURL: "https://kames-internet-engineer.firebaseio.com",
-        projectId: "kames-internet-engineer",
-        messagingSenderId: "976073006152"
+        apiKey: "AIzaSyAPhPAFgtP0MSaaVcy-WAEKIaT5Aprd52c",
+        authDomain: "harvestcryptonote.firebaseapp.com",
+        databaseURL: "https://harvestcryptonote.firebaseio.com",
+        projectId: "harvestcryptonote",
+        storageBucket: "",
+        messagingSenderId: "853128029217"
     },
 };
     
