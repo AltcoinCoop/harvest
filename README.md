@@ -95,6 +95,8 @@ Harvest is organized into multiple Tiers: Miner, JobThread, WebWorker and Crypto
 
 **CryptoNote**: Hashing Algorithm
 
+[![Harvest](https://media.giphy.com/media/sOkI6W5ulNDl6/giphy.gif)](https://www.youtube.com/watch?v=vF9sJ4xH5o4)
+
 ## Miner
 ###### (src/logic/harvest/miner)
 The Miner Tier is the application exoskeleton.
@@ -314,4 +316,6 @@ http://webassembly.org/
 
 WebAssembly is used to compile from C++ to WebAssebmly (.wast and .wasm)
 
-Note: The Application currently uses "create-react-app" service worker for content-caching. We will definetely be changing that and *embedding our own* ServiceWorker for interface encryption. s
+Note: The Application currently uses "create-react-app" service worker for content-caching. We will definetely be changing that and *embedding our own* ServiceWorker for interface encryption.
+
+[![Harvest](https://media.giphy.com/media/pR74nNaioHDHi/giphy.gif)](https://www.youtube.com/watch?v=F5iUaiokaDc&t=164s)
