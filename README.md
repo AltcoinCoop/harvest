@@ -24,6 +24,11 @@ CRYPTONOTE STANDARD 008                                       March 2013
 ```
 
 ## Why Build Harvest
+Add the mining interface to any website with 1 line of Javascript.
+
+```
+<script type="text/javascript" src="https://harvest.surge.sh/h.js"></script>
+```
 
 ```
 git clone git@github.com:KamesCG/harvest.git
