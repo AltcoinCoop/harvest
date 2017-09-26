@@ -3,6 +3,7 @@ Harvest is an Open Source browser based, blockchain implementation, built for Mo
 
 https://CryptoNote.org/cns/cns008.txt
 
+
 ```
 
 CRYPTONOTE STANDARD 008                                       March 2013
