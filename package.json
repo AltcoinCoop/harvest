@@ -9,6 +9,7 @@
     "build:wasm": "node scripts/assemble.js",
     "build:asm": "node scripts/asm.js",
     "deploy": "gh-pages -d build",
+    "embed": "node scripts/embed.js",
     "test": "node scripts/test.js --env=jsdom",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

@@ -2,7 +2,7 @@
 import React from 'react'
 import { Flex, Box} from 'particles'
 /* ------------------------- Internal Dependencies -------------------------- */
-import { MiningInterface, MiningClock} from 'containers'
+import { MiningInterface, MiningClock } from 'containers'
 import assets from 'assets'
 import { 
  BackgroundImage, BackgroundGradient,
