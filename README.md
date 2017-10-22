@@ -41,7 +41,7 @@ cd harvest
 
 yarn
 
-yarn install -g webassembly // tooling
+yarn global add webassembly // tooling
 
 yarn start // development
 yarn build // production
