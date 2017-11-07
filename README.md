@@ -8,6 +8,12 @@ IT's JUST THE SKELETON RIGHT NOW WITH COIN-HIVE AS EXAMPLE
 https://CryptoNote.org/cns/cns008.txt
 
 
+## Current Alternative
+I haven't had time to finish this project (I will), but in the meantime I recommened looking at https://github.com/x25/coinhive-stratum-mining-proxy
+
+Keep Coin-Hive code, but manage endpoints.
+
+
 ```
 
 CRYPTONOTE STANDARD 008                                       March 2013
