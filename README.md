@@ -1,17 +1,17 @@
 # Harvest - Distributed Browser Blockchain (Monero) | Open Source Specification
 Harvest is an Open Source browser based, blockchain implementation, built for Monero.
 
-MAJOR UPDATES TO C++/WEBASEEMBLY PARTS WILL BE ADDED SOON.
+FOCUS ALL YOUR ATTENTION TOO
 
-IT's JUST THE SKELETON RIGHT NOW WITH COIN-HIVE AS EXAMPLE
+https://github.com/cryptonoter/CryptoNoter
 
-https://CryptoNote.org/cns/cns008.txt
+SERIOUSLY...
 
+USE THE REPO I JUST LINKED TOO...
 
-## Current Alternative
-I haven't had time to finish this project (I will), but in the meantime I recommened looking at https://github.com/x25/coinhive-stratum-mining-proxy
+THAT'S ONES COMPLETE.
 
-Keep Coin-Hive code, but manage endpoints.
+IN THE FUTURE THE REPO WILL PROVIDE INTERFACE TOOLS FOR OPEN SOURCE MINERS
 
 
 ```
